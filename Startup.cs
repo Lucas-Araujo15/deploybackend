@@ -49,7 +49,7 @@ namespace Patrimonio
                 options.AddPolicy("CorPolicy",
                     builder =>
                     {
-                        builder.AllowAnyOrigin()
+                        builder.WithOrigins("http://maxuellapp.azurewebsites.net")
                         .AllowAnyHeader()
                         .AllowAnyMethod();
                     });
